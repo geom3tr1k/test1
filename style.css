@@ -1,0 +1,99 @@
+body {
+    background-color: #101010;
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  h1 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+ 
+    .card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #777;
+    line-height: 1.4;
+  }
+
+.card {
+  width: 300px;
+  height: 450px;
+  margin: 20px;
+  position: relative; 
+  border: 1px solid #000000;
+
+  
+ }
+ .product,
+.description {
+ width: 100%; 
+ height: 100%; 
+ position: absolute; 
+ left: 0;
+ top: 0; 
+ text-align: center;
+ background-color: #fff;
+}
+
+
+.product,
+.description {
+ backface-visibility: hidden;
+}
+.description {
+  box-sizing: border-box;
+  padding: 40px;
+  transform: rotateY(
+    180deg
+  ); 
+ }
+ .product,
+.description {
+ transition: 1s;
+}
+.card:hover .product {
+  transform: rotateY(180deg); 
+ }
+ .card:hover .description {
+  transform: rotateY(360deg); 
+ }
+
+ .description a {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #732222;
+  background-color: #f5dde1;
+    cursor: pointer;
+ }
+ 
+ @media screen and (max-width: 1024px) {
+  .card {
+    width: 50%; 
+    max-width: 100%; 
+    margin: auto auto 10px; 
+  }
+  img {
+    height: 450px;
+    width: 492px;
+  }
+ }
