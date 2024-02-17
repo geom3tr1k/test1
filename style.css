@@ -4,7 +4,22 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  .menu {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+  }
+ .menu a {
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    font-size: x-large;
+  }
+  ul {
+    list-style-type: none;
+  }
   .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -14,8 +29,13 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
-  h1 {
+  .novinki {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    background-color: #777;
+  }
+  .novinki h1 {
     color: #ffffff;
     margin-bottom: 30px;
     text-align: center;
@@ -86,14 +106,50 @@ body {
     cursor: pointer;
  }
  
- @media screen and (max-width: 1024px) {
-  .card {
-    width: 50%; 
-    max-width: 100%; 
-    margin: auto auto 10px; 
-  }
-  img {
-    height: 450px;
-    width: 492px;
-  }
- }
+ .nadpic h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.car {
+  background-color: #777;
+}
+
+.car_one {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.img_car {
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px; 
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+  color: #ffffff;
+}
+
+.car_one:hover .caption {
+  opacity: 1; 
+}
+.opis {
+  color: #ffffff;
+  text-align: center;
+  font-size: larger;
+}
